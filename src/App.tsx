@@ -11,11 +11,12 @@ function App() {
     return IS_WEBGPU_AVAILABLE ? (
         <div className='flex justify-center items-center min-h-screen'>
             <div className='container flex flex-col justify-center items-center'>
+                <img src="/logo.png" alt="logo" style={{ width: '50%' }} />
                 <h1 className='text-5xl font-extrabold tracking-tight text-slate-900 sm:text-7xl text-center'>
                     CDHU Whisper
                 </h1>
                 <h2 className='mt-3 mb-5 px-4 text-center text-1xl font-semibold tracking-tight text-slate-900 sm:text-2xl'>
-                    Choose the file you would like to transcribe
+                    Click 'From file' and choose an audio file to transcribe.<br /> Click the cog on the bottom right corner to change models.
                 </h2>
                 <AudioManager transcriber={transcriber} />
                 <Transcript transcribedData={transcriber.output} />
