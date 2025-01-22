@@ -27,3 +27,4 @@ You can now open your browser and go to http://localhost:3000 . You should now s
 
 >[!IMPORTANT]
 >Right now, the application only works on Google Chrome.
+
