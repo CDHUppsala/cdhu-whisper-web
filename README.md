@@ -8,7 +8,7 @@ A whisper app that can be quickly deployed with docker locally.
 2. To use Docker Desktop the first time, you might need to restart your computer and setup a Docker account, but they are for free.
 3. Open the terminal from Docker Desktop and run the following command to download the script to run the app:
 ```
-curl -o https://raw.githubusercontent.com/AlexanderWinters/cdhu-whisper-gpu/refs/heads/main/docker-compose.yml
+curl -o docker-compose.yml https://raw.githubusercontent.com/AlexanderWinters/cdhu-whisper-gpu/refs/heads/main/docker-compose.yml
 ```
 <img width="635" alt="Screenshot 2025-01-22 at 11 14 18" src="https://github.com/user-attachments/assets/fce5a959-9980-42bd-8d64-1a675807846a" />
 
