@@ -1,27 +1,16 @@
-# Whisper Web
+# CDHU Whisper
 
-ML-powered speech recognition directly in your browser! Built with [🤗 Transformers.js](https://github.com/xenova/transformers.js).
+Installation:
 
-Check out the demo site [here](https://huggingface.co/spaces/Xenova/whisper-webgpu).
+1. First, you need to install Docker Desktop: https://www.docker.com/products/docker-desktop/. Scroll a bit, and click the download link. 
+2. To use Docker Desktop you might need a Docker account, but they are for free.
+3. Download the docker-compose file either in the terminal:
+```curl -o https://raw.githubusercontent.com/AlexanderWinters/cdhu-whisper-gpu/refs/heads/main/docker-compose.yml
+```
+or download the file from the repository: https://github.com/AlexanderWinters/cdhu-whisper-gpu.git
+4. Open the terminal and run the following command:
+```docker compose up -d
+```
 
-https://github.com/xenova/whisper-web/assets/26504141/5d6ed3d9-5f99-4d89-8e38-9d4fc8d5baaf
+You should now see a container appearing in the Docker Desktop app, in the containers section. You can now manage whisper from there.
 
-## Running locally
-
-1. Clone the repo and install dependencies:
-
-    ```bash
-    git clone https://github.com/xenova/whisper-web.git
-    cd whisper-web
-    npm install
-    ```
-
-2. Run the development server:
-
-    ```bash
-    npm run dev
-    ```
-    > Firefox users need to change the `dom.workers.modules.enabled` setting in `about:config` to `true` to enable Web Workers.
-    > Check out [this issue](https://github.com/xenova/whisper-web/issues/8) for more details.
-
-3. Open the link (e.g., [http://localhost:5173/](http://localhost:5173/)) in your browser.
