@@ -3,12 +3,12 @@ import Transcript from "./components/Transcript";
 import { useTranscriber } from "./hooks/useTranscriber";
 
 // @ts-ignore
-//const IS_WEBGPU_AVAILABLE = !!navigator.gpu;
+const IS_WEBGPU_AVAILABLE = !!navigator.gpu;
 
 function App() {
     const transcriber = useTranscriber();
 
-    return /*IS_WEBGPU_AVAILABLE ?*/ (
+    return IS_WEBGPU_AVAILABLE ? (
         <div className='flex justify-center items-center min-h-screen'>
             <div className='container flex flex-col justify-center items-center'>
                 <img src="/logo.png" alt="logo" style={{ width: '50%' }} />
@@ -32,13 +32,16 @@ function App() {
                 </a>
             </div>
         </div>
-    ); /*: (
+    ) : (
         <div className='fixed w-screen h-screen bg-black z-10 bg-opacity-[92%] text-white text-2xl font-semibold flex justify-center items-center text-center'>
-            WebGPU is not supported
+
+            CDHU Whisper is not supported
+            on this browser.
             <br />
-            by this browser :&#40;
+            Please use Google Chrome.
+            <img src="/logo.png" alt="logo" style={{ width: '25%' }} />
         </div>
-    );*/
+    );
 }
 
 export default App;
