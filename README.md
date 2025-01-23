@@ -2,7 +2,7 @@
 
 A whisper web app. 
 
-## To run locally:
+## Run locally:
 
 1. Download docker compose file:
 ```
@@ -12,5 +12,7 @@ curl -o docker-compose.yml https://raw.githubusercontent.com/AlexanderWinters/cd
 ```
 docker compose up -d
 ```
-3. You can now open your browser and go to http://localhost:3000
+3. You can now open your browser and go to http://localhost:3000 (Only works on Chrome)
 
+## Run on a server:
+Same as above, but for the webGPU to work, the app needs to be served over HTTPS.
