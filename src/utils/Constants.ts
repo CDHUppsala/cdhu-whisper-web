@@ -27,10 +27,10 @@ export default {
         isMobileOrTablet ? "jfk" : "ted_60_16k"
     }.wav`,
     DEFAULT_MODEL: isMobileOrTablet
-        ? "onnx-community/whisper-tiny"
-        : "onnx-community/whisper-base",
+        ? "onnx-community/whisper-large-v3-turbo"
+        : "onnx-community/whisper-large-v3-turbo",
     DEFAULT_SUBTASK: "transcribe",
-    DEFAULT_LANGUAGE: "english",
+    DEFAULT_LANGUAGE: "swedish",
     DEFAULT_QUANTIZED: isMobileOrTablet,
     DEFAULT_MULTILINGUAL: true,
 };

@@ -23,7 +23,8 @@ function titleCase(str: string) {
 // https://github.com/openai/whisper/blob/248b6cb124225dd263bb9bd32d060b6517e067f8/whisper/tokenizer.py#L79
 const LANGUAGES = {
     en: "english",
-    zh: "chinese",
+    sv: "swedish",
+    /*zh: "chinese",
     de: "german",
     es: "spanish/castilian",
     ru: "russian",
@@ -36,7 +37,6 @@ const LANGUAGES = {
     ca: "catalan/valencian",
     nl: "dutch/flemish",
     ar: "arabic",
-    sv: "swedish",
     it: "italian",
     id: "indonesian",
     hi: "hindi",
@@ -120,7 +120,7 @@ const LANGUAGES = {
     ha: "hausa",
     ba: "bashkir",
     jw: "javanese",
-    su: "sundanese",
+    su: "sundanese",*/
 };
 
 const MODELS = Object.entries({
@@ -435,6 +435,7 @@ function SettingsModal(props: {
                                 className='mt-1 mb-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
                                 defaultValue={props.transcriber.language}
                                 onChange={(e) => {
+
                                     props.transcriber.setLanguage(
                                         e.target.value,
                                     );
