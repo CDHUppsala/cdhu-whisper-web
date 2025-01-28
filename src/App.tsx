@@ -60,7 +60,7 @@ function App() {
             </div>
 
 
-            <div className='absolute bottom-4'>
+            {/*<div className='absolute bottom-4'>
                 Uppsala University - {" "}
                 <a
                     className='underline'
@@ -68,7 +68,7 @@ function App() {
                 >
                     CDHU
                 </a>
-            </div>
+            </div>*/}
         </div>
     ) : (
         <div className='fixed w-screen h-screen bg-black z-10 bg-opacity-[92%] text-white text-2xl font-semibold flex justify-center items-center text-center'>
