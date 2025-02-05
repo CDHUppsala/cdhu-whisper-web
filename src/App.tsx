@@ -27,9 +27,15 @@ function App() {
                         <li>This service <strong>does not provide diarization</strong> (speaker identification).</li>
                         <li>For more advanced service beyond what this application provides or larger scale transcriptions, please consider contacting Uppmax for a transcription project or apply for CDHU pilot support.<br /></li>
                     </ul>
-
+                    We welcome any {" "}
+                    <a
+                        className='underline font-bold'
+                        href='https://docs.google.com/spreadsheets/d/1exVpiAGPcBLxuW8TWPgSkpK_eMOMofCaS8kSB-ybbEE/edit?gid=0#gid=0'
+                    >
+                        feedback
+                    </a>
                 </div>
-
+                <br />
                 <AudioManager transcriber={transcriber} />
                 <Transcript transcribedData={transcriber.output} />
             </div>
